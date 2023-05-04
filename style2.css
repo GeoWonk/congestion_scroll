@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kosugi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700&display=swap');
+
+body {
+   
+    overflow-x: hidden;
+    font-family: "Crimson Text";
+    font-size: 25;
+    //background-color: fffdf0;
+
+
+}
+
+path{
+    
+    z-index: 5;
+}
+
+#textbox{
+    //position: fixed;
+}
+
+
+
+#legend {
+    display: inline-block;
+    position: fixed;
+    left: 595;
+    z-index: 30;
+    height: 100px;
+    width: 300px;
+    font-family: "Crimson Text";
+    z-index: 1;
+    //background-color: red;
+    pointer-events: none;
+
+}
+
+#sections {
+    position: relative;
+    display: in;
+    width: 740px;
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 30%;
+    //background-color: fffdf0;
+    vertical-align: middle;
+    opacity:  1;
+    outline-width: 2;
+    pointer-events: none;
+
+
+    
+}
+
+.step {
+    margin-bottom: 0px;
+    margin-top: 100%;
+    border-width: 1;
+    border-color: black;
+    border-style: solid;
+    padding: 30;
+    font-weight: 400;
+    line-height: 1em;
+    //text-align: justify;
+    background-color: fffdf0;
+    justify-content: center;
+    //vertical-align: middle;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    
+    
+}
+
+#finalstep{
+    pointer-events: all !important;
+    z-index: 1000 !important;
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-align: right;
+    line-height: 32px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+strong {
+    color: black;
+    background-color: #cdd7b7;
+}
+
+
+
+
+.dot{
+    z-index: 1000;
+    r:  6;
+}
+
+.hoverline{
+    z-index: 1001;
+    size:  6;
+    stroke: #505050;
+    stroke-width: 3;
+    stroke-dasharray: 10;
+}
+
+.hoverlinefixed{
+    z-index: 1001;
+    size:  2;
+    stroke: #505050;
+    stroke-width: 3;
+    stroke-dasharray: 1;
+}
+
+.year-watermark{
+    font-size: 150;
+    fill: grey;
+}
+
+
+
+.bands{
+    font-size: 100;
+    z-index: 5;
+}
+
+.title{
+    font-size: 30;
+    z-index: 5;
+    font-weight: bold;
+}
+
+.legx{
+    z-index: 20;
+}
+
+#vis {
+    display: inline-block;
+    position: fixed;
+    top: 5%;
+    left:  100px;
+    z-index: 2;
+    height: 700px;
+    width: 450px;
+    font-family: "Crimson Text";
+    z-index: 5;
+    //background-color: fffdf0;
+    opacity: 80%;
+
+}
+
+#logo{
+    font-family: "Lato";
+    left: 5%;
+    bottom: 5%;
+   padding-left: 50px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 10px;
+    position: fixed;
+   font-size: 35;
+   font-weight: bold;
+    color: white;
+    pointer-events: all;
+    text-align: right;
+    background-color: #013e75;
+    z-index: 100000;
+}
+
+
+#hour {
+    display: inline-block;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    z-index: 0;
+    height: 100px;
+    width: 50%;
+    font-family: "Crimson Text";
+    z-index: 1;
+    font-weight: bold;
+    pointer-events: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hourtext{
+    font-size: 30;
+    color: 363231;
+    pointer-events: none;
+    text-align: middle;
+    background-color: fffdf0;
+     border-width: 1;
+    border-color: black;
+    border-style: solid;
+    padding: 20;
+
+}
+
+
+.mapboxgl-Popup-content {
+    font-family: "Kosugi";
+    background-color:   fffdf0 !important;
+    box-shadow: 3px 3px 2px #8B5D33;
+    padding:  6px;
+    border-width: 1;
+    border-color: black;
+    border-style: solid;
+    border-radius: 0 !important;
+}
+
+#slippymap {
+    display: inline-block;
+    position: fixed;
+    left: 0px;
+    top:  0px;
+    z-index: 0;
+    margin-left: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#tooltip {
+    position: absolute;
+    display: flex;  
+    color: black;
+    padding: 6px;
+    z-index: 999;
+    font-size: 1.1em;
+    max-width: 500px;
+    z-index: 100;
+    border-width: 1;
+    border-color: black;
+    border-style: solid;
+    background-color:   fffdf0 !important;
+
+}
+
+

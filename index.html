@@ -1,0 +1,410 @@
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+                <link rel="stylesheet" href="/style2.css">
+                <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+                <meta property='og:title' content='Congestion'/>
+                <meta property='og:description' content='A test for congestion graphs'/>
+                <meta property='og:url' content='www.bitre.gov.au'/>
+               <title>Freight vehicle congestion in Australian capital cities during the COVID-19 pandemic</title>
+            </head>
+            <body>
+                <!-- <div id="info">
+                    a
+                </div> -->
+                
+                <div id="tooltip"></div>
+            <!-- <select id="citySelect"></select>
+        </p>
+        <select id="selectButton"></select>
+        </p>
+        <select id="directionButton"></select> -->
+
+        <div id = "slippymap" class = 'slippymap'><div id="hour"></div> </div>
+        <a href="https://www.bitre.gov.au">
+            <div id="logo">bitre</div>
+        </a>
+        <div id="textbox">
+        <div id="sections">
+           
+        <section class="step">
+
+        
+        <!-- <h1>Congestion</h1> -->
+        
+         BITRE's freight vehicle telematics data project has been collecting truck vehicle movement data from industry participants, and collating millions of actual truck journeys to better understand how and when congestion affects heavy vehicle operators. The data allows tracking of changes in congestion experienced by freight vehicles over the course and aftermath of the COVID-19 pandemic to anticipate where future challenges might lie. In particular these patterns are related to changes in passenger commuter traffic that shares the roads with freight vehicles.
+       
+        <div id = mapsection>
+            
+        </br>
+            <div id = "intro" class = 'intro'> </div>
+        </p>
+
+
+        </p>
+
+        </section>
+
+        <section class = 'step'>
+        <div>
+       Let's start with the M5, a major route from the South West into Port Botany, the Airport and the City, shared with many commuters. Here you can see travel times for each direction in 2019. The centre line is the median travel time, and the band is the interquartile range, that is the middle 50 per cent of times. (You can pass your mouse over the graph to see the data.)
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        Here the map is showing typical congestion for trips into the city in the hour following 4am in 2019. Median travel speeds are slightly lower in the Eastern portion (closer to the CBD), but are generally above 60kph. (Again, you can examine individual segments with the mouse.)
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        But after 5am things get slower.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        And after 6am median travel times have almost doubled and there are significant points of congestion.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        Particularly here in the Eastern portion of the route. Some segments had median speeds as low as 12 km per hour at this time of day.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        In 2020 however - the first year of the pandemic - this time of day had become far less congested and travel times for freight vehicles were only slightly above free running conditions. This was the result of lower volumes of commuter traffic due to lockdowns.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        In 2021, particularly with lockdowns that initially restricted commuter traffic from South West Sydney more than other regions, the peaks and congestion were almost gone. The segment that had median speeds of 12 kph at this time of day in 2019 exhibited median speeds of 77 kph at the same time of day in 2021.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        In 2022 congestion had returned, but median travel times were less than before the pandemic, perhaps because of lasting changes to commuter behaviour. However, median travel speeds were now lower near the M7 and Hume Motorway.
+        </div>
+        </section>
+
+
+
+        <section class = 'step'>
+        <div>
+        This new point of congestion reflects traffic from the expanding Macarthur region in Sydney. Commuters and freight from this region can also use the M7 to move North through Western Sydney and access the M2 and, via NorthConnex, the Central Coast, Hunter Region and Northern NSW.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        Here we are looking at travel speeds (and times) for Southerly direction travel, from the M2 to the M7. At 2pm congestion is low and speeds are consistent across the route.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        However, things slow down moving into the afternoon peak.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        Travel times reach their maximum at around 4pm, when commuters and school children are returning home.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        Delays are particularly focused here, just south of the interchange with the M4. Interchanges can be sources of new traffic and the intermingling of traffic streams often make them sites of congestions.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        The M7, unlike the M5, experienced no reduction in travel times during the first year of the pandemic, and travel times retained a distinct 4 pm peak.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        And in the second year of the pandemic the peak even increased.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        Congestion increased even further in 2022 as pandemic restrictions eased. 
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        And there was even a new emerging point of congestion near Norwest Boulevard in North West Sydney.
+        <br>
+        <br>
+        It may be this route was becoming more congested, and pandemic restrictions temporarily delayed it.
+        </div>
+        </section>
+
+
+        <section class = 'step'>
+        <div>
+        Let's move on to Melbourne. The Eastern portion of the M1 (also known as the Monash Freeway) runs between the South East and Central Melbourne, including the Port of Melbourne.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        Like the M5 in Sydney we'll look at median freight vehicle travel speeds for the city-bound direction in the morning, a time shared with city-bound commuters. At 5am travel times are close to free running conditions
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        But after 6am times begin to rise and speeds begin to drop.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        Travel times peak in the hour after 7 am
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        Delays begin to become apparent close to the city on CityLink
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        and even more so near the intersection with EastLink (the M3) near Dandenong. Here median speeds can fall to 18 kph.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        However, in the first year of pandemic median travel times at this hour were close to free running conditions.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        And in 2021 as well.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        In 2022, as restrictions eased, congestion returned but, like the M5 in Sydney, travel times and delays were far less apparent than in 2019, possibly suggesting lasting changes to congestion patterns.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        Like in Sydney, things weren't as straightforward in the west of the city. Let's have a look at the Western Ring Road (M80).
+        </div>
+        </section>
+         <section class = 'step'>
+        <div>
+        Here are afternoon speeds heading north east. The time of day graph shows a sharp increase in travel times commencing around 2pm in 2019. 
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        Congestion is increasing at each end of the route after 3pm.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        After 4pm congestion is increasing near the Airport as well.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        And travel times peak in the hour after 5pm.
+        </div>
+        </section>
+    
+        <section class = 'step'>
+        <div>
+        In 2020 travel times fell dramatically, 
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        In particular the delays around Tullamarine disappeared.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+         But despite further lockdowns in 2021 they began to climb again 
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        and in 2022 were almost back where they had been before the pandemic.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        A new point of delay also appeared at Derrimut where the M80 joins the Western Freeway. Like the M7 this might be congestion that was delayed by the pandemic but not structurally changed as on other routes.
+        </div>
+        </section>
+
+        <section class = 'step'>
+        <div>
+        Delays at the eastern end of the route were present in all years. 
+        </div>
+        </section>
+
+
+
+        <section class = 'step'>
+        <div>
+        Both Sydney and Melbourne had longer and more stringent lock downs than the other capitals during the COVID-19 pandemic. But changed commuter patterns also affected freight in other cities, but often in less straightforward ways. This is the portion of the M2 in Brisbane linking the Logan and Pacific Motorways.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        Heading North in 2019 there was a minor morning peak in the hour after 7am, but one that was dwarfed by delays during the night (between 8pm and 4m) which may have been due to roadwork-related speed restrictions.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        But even the minor morning peak became muted in 2020.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        However in 2021 a pronounced morning peak had emerged
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        and in 2022 over half the route was beset with delays at this hour.
+        </div>
+        </section>
+
+
+
+
+        <section class = 'step'>
+        <div>
+        Like Brisbane, Perth had milder COVID-related lockdowns and the effects on Perth routes were mixed. However, even minor changes could impact route travel speeds. This is the Mitchell Freeway running through the Perth's northern suburbs.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        We can see the morning peak in the south bound direction - i.e. towards the city - in 2019. 
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        After 6 am we can see delays beginning to appear along the route.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        And after 7 am they have become severe, and median travel times have doubled.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        One particular area of delays is around Stirling, where median speeds fall to as low as 14 kph.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        In 2020 these delays vanished.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        They returned partially in 2021.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        But remained stable in 2022.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        This follows a similar pattern to the M5 in Sydney and the Monash Freeway in Melbourne. There seems to be a structural change in congestion on the city-bound route. But let's switch direction to the afternoon peak for traffic leaving the city.
+        </div>
+        </section>
+        <section class = 'step'>
+        <div>
+        This is congestion heading north after 5 pm in 2019.
+        </div>
+        </section>
+        <section class = 'step'>
+         <div>
+        In the first year of the pandemic congestion and travel times marginally increased
+        </div>
+        </section>
+        <section class = 'step'>
+         <div>
+        And did so again in 2021.
+        </div>
+        </section>
+        <section class = 'step'>
+         <div>
+        Before falling in 2022. There are clearly factors and trends beyond the pandemic at play.
+        </div>
+        </section>
+       
+
+
+
+        <section class = 'step'>
+            The BITRE telematics program has been measuring freight congestion for 4 years across the five mainland capitals.
+        </section>
+         <section class = 'step'>
+           The congestion measures produced cover 72 routes, over 8 000 distinct road segments and over a billion vehicle observations.
+        </section>
+         <section class = 'step'>
+            But the project covers all of Australia with a database including over 20 000 vehicles, a million road segments and 5 billion observations.
+        </section>
+         <section class = 'step'>
+            It also tracks usage of thousands of rest areas and millions of vehicle stops to allow better provision of facilities and identify needed locations.
+        </section>
+         <section class = 'step' id = 'finalstep'>
+            Learn more about BITRE telematics project:
+            <br><br>
+             <a href="https://bitre-telematics.github.io/yulo_book/index.html">The Yulo Framework</a>
+              <br>
+              <a href="https://www.bitre.gov.au/publications/2022/freight-vehicle-congestion-australias-five-major-cities-2021">The Freight Congestion in Capital Cities 2021</a>
+              <a href="https://www.bitre.gov.au/publications/2023/freight-vehicle-congestion-australias-five-major-cities-2022">The Freight Congestion in Capital Cities 2022</a>
+
+              <br>
+              <a href="https://data.gov.au/dataset/ds-dga-444dc49a-780a-4c2a-840a-0a38cc4be635/details?q=freight%20congestion">Get the data for this story</a>
+              <br>
+              <a href="https://datahub.freightaustralia.gov.au">The National Freight Data Hub</a>
+        </section>
+ <section class = 'step'>
+            
+        </section>
+
+        </div>
+         
+
+         
+
+        <div id="vis"></div>
+        <!-- <div id = "legend" class = 'legend'> </div> -->
+
+
+        <!-- 
+        <script src= '/d3.js'></script>
+        <script src = '/data/geoms.js'></script>
+        <script src = '/scroller2.js'></script>
+
+        <script src = './sections.js'></script>
+         -->
+
+        
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+        <script src = '/story2_all_in_one.js'></script>
+        </body>
+        </html>
