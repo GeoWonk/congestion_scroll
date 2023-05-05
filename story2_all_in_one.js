@@ -733,7 +733,7 @@ cleaner=function(){SHOW_TOOLTIP=!1;svg=d3.select("#vis").selectAll("svg").transi
 scroll.on("active",function(v){d3.selectAll(".step").transition().duration(500).style("opacity",function(Ea,Da){return Da===v?1:0});activeIndex=v;let na=0>activeIndex-lastIndex?-1:1;d3.range(lastIndex+na,activeIndex+na,na).forEach(Ea=>{activationFunctions[Ea]()});lastIndex=activeIndex});scroll.on("progress",function(v,na){});
 d3.select("#citySelect").on("change",function(v){city=d3.select(this).property("value");cityRoutes=time_dat.filter(function(Ea){return Ea.city==city});allGroup=[...(new Set(cityRoutes.map(Ea=>Ea.short_name)))];menu=d3.select("#selectButton").selectAll("option").data(allGroup);menu.exit().remove();menu=menu.enter().append("option").merge(menu);menu.text(function(Ea){return Ea.replace(/_.*/," ")}).attr("value",function(Ea){return Ea});v=d3.select("#selectButton");const na=new Event("change");v.node().dispatchEvent(na)});
 function change_route(v){r_dat=time_dat.filter(function(na){return na.short_name==v});r_geom=get_geojson_alt(v);r_geom=add_ids(r_geom);directions=[...(new Set(r_geom.map(na=>na.properties.route_name)))];createScales();newChart()}function mouseOver(v,na){if(SHOW_TOOLTIP){const Ea=Math.round(timex.invert(v.pageX-100)),Da=na[1].filter(function(Ga){return Ga.hour===Ea})[0];tooltip=d3.select("#tooltip");tooltip.html(`
-                //<strong>Hour: </strong> &nbsp&nbsp${Da.hour+":00"} 
+                <strong>Hour: </strong> &nbsp&nbsp${Da.hour+":00"} 
                 <br> <strong>Median travel time: </strong>&nbsp&nbsp  ${Da.med_est_char} 
                 <br> <strong>Lower quartile travel time: </strong>&nbsp&nbsp ${Da.UQ_est_char}
                 <br> <strong>Upper quartile travel time: </strong>&nbsp&nbsp  ${Da.LQ_est_char}
