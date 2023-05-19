@@ -78,6 +78,30 @@ path{
     
 }
 
+
+.finalstep {
+    margin-bottom: 0px;
+    margin-top: 100%;
+    border-width: 1;
+    border-color: black;
+    border-style: solid;
+    padding: 30;
+    font-weight: 400;
+    line-height: 1em;
+    //text-align: justify;
+    background-color: fffdf0;
+    justify-content: center;
+    //vertical-align: middle;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    pointer-events: all !important;
+    z-index: 1000 !important;
+    
+    
+}
+
 #finalstep{
     pointer-events: all !important;
     z-index: 1000 !important;
